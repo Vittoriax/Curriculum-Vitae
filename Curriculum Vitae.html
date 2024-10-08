@@ -1,0 +1,283 @@
+<!DOCTYPE html> 
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Imię Nazwisko</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 200vh;
+        }
+
+        .left-column {
+            background-color: rgb(1, 32, 31);
+            color: white;
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-column {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: rgb(1, 32, 31);
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid rgb(1, 32, 31);
+            margin: 20px 0;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px black solid;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .left-column p, .left-column h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .contact, .education, .languages, .skills {
+            margin-bottom: 20px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .experience-block {
+            margin-bottom: 20px;
+        }
+
+        .experience-block h3 {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .experience-block p.date {
+            font-size: 12px;
+            color: rgb(4, 102, 99);
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .experience-block ul {
+            font-size: 13px;
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        .skills {
+            margin-top: 0;
+        }
+
+        .skills ul {
+            margin-left: 20px;
+        }
+
+        .skills li {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .rodo {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>Imię i Nazwisko</h1>
+
+            <div class="photo">
+                <img src="Twojezdjecie.jpg">
+            </div>
+
+            <div class="contact">
+                <h2>Kontakt</h2>
+                <p>Email</p>
+                <p>Kraj</p>
+                <p>dd-mm-rrrr</p>
+            </div>
+
+            <div class="education">
+                <h2>Wykształcenie</h2>
+                <p>Tytuł zawodowy</p>
+                <p>Nazwa szkoły, Miasto</p>
+                <p>Miesiąc rrrr - Miesiąc rrrr</p>
+            </div>
+
+            <div class="languages">
+                <h2>Języki</h2>
+                <p>Język: Poziom</p>
+                <p>Język: Poziom</p>
+                <p>Język: Poziom</p>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <h2>O mnie</h2>
+            <hr>
+            <p style="font-size: 12px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan bibendum lectus, ac volutpat ligula 
+                dignissim a. Duis venenatis lectus vitae nisl ullamcorper luctus. Vivamus vitae augue fringilla, pretium odio a
+                t, commodo orci. Curabitur ligula magna, feugiat in nisl eu, elementum varius nibh. Nullam ut nisl at nulla 
+                porttitor luctus. In non suscipit lectus. Mauris a condimentum velit. Nullam semper elementum lectus nec eleifend. 
+                Interdum et malesuada fames ac ante ipsum rimis in faucibus. Maecenas sit amet semper lorem...
+            </p>
+                <p style="color: rgb(4, 102, 99); font-size: 10px;"><b>Dyplomy</b> <br>
+                    > 'Link'</a></p>
+                <p style="color: rgb(4, 102, 99); font-size: 10px;"><b>Dyplomy</b> <br>
+                    > 'Link''</p>
+            <h2>Doświadczenie Zawodowe</h2>
+            <hr>
+            <div class="experience-block">
+                <h3>Stanowsiko, Firma, Miasto</h3>
+                <p class="date">od (mm rr) - do (mm rr)</p>
+                <ul>
+                    <li>Duis ac molestie nisl. In non nisl justo.</li>
+                    <li>Suspendisse sollicitudin iaculis augue, ut faucibus mi pulvinar eget.</li>
+                    <li>Cras iaculis vestibulum lacus.</li>
+                    <li>Fusce in condimentum sem.</li>
+                    <li>Phasellus purus enim, lobortis nec semper nec, luctus sit amet metus.</li>
+                </ul>
+            </div>
+            <div class="experience-block">
+                <h3>Stanowsiko, Firma, Miasto</h3>
+                <p class="date">od (mm rr) - do (mm rr)</p>
+                <ul>
+                    <li>Duis ac molestie nisl. In non nisl justo.</li>
+                    <li>Suspendisse sollicitudin iaculis augue, ut faucibus mi pulvinar eget.</li>
+                    <li>Cras iaculis vestibulum lacus.</li>
+                    <li>Fusce in condimentum sem.</li>
+                    <li>Phasellus purus enim, lobortis nec semper nec, luctus sit amet metus.</li>
+                </ul>
+            </div>
+            <div class="experience-block">
+                <h3>Stanowsiko, Firma, Miasto</h3>
+                <p class="date">od (mm rr) - do (mm rr)</p>
+                <ul>
+                    <li>Duis ac molestie nisl. In non nisl justo.</li>
+                    <li>Suspendisse sollicitudin iaculis augue, ut faucibus mi pulvinar eget.</li>
+                    <li>Cras iaculis vestibulum lacus.</li>
+                    <li>Fusce in condimentum sem.</li>
+                </ul>
+            </div>
+            <div class="experience-block">
+                <h3>Stanowsiko, Firma, Miasto</h3>
+                <p class="date">od (mm rr) - do (mm rr)</p>
+                <ul>
+                    <li>Duis ac molestie nisl. In non nisl justo.</li>
+                    <li>Suspendisse sollicitudin iaculis augue, ut faucibus mi pulvinar eget.</li>
+                    <li>Cras iaculis vestibulum lacus.</li>
+                    <li>Fusce in condimentum sem.</li>
+                    <li>Phasellus purus enim, lobortis nec semper nec, luctus sit amet metus.</li>
+                </ul>
+            </div>
+            <div class="experience-block">
+                <h3>Stanowsiko, Firma, Miasto</h3>
+                <p class="date">od (mm rr) - do (mm rr)</p>
+                <ul>
+                    <li>Duis ac molestie nisl. In non nisl justo.</li>
+                    <li>Suspendisse sollicitudin iaculis augue, ut faucibus mi pulvinar eget.</li>
+                    <li>Cras iaculis vestibulum lacus.</li>
+                    <li>Fusce in condimentum sem.</li>
+                    <li>Phasellus purus enim, lobortis nec semper nec, luctus sit amet metus.</li>
+                </ul>
+            </div>
+            <h2 style="padding-top: 30px;">Umiejętności techniczne</h2>
+            <hr>
+            <div class="skills">
+                <ul>
+                    <li><strong>Umiejętność</strong> - Sed suscipit pellentesque neque, id accumsan ex iaculis eu.</li>
+                    <li><strong>Umiejętność</strong> - Duis fringilla ultrices lorem id finibus. Curabitur mollis magna id consectetur consectetur. </li>
+                    <li><strong>Umiejętność</strong> - Sed sed massa nec ante tincidunt gravida. Aenean eget posuere odio, at aliquet tellus. Etiam a turpis nibh. </li>
+                    <li><strong>Umiejętność</strong> - Suspendisse at velit ornare, feugiat nisl quis, tempor elit. Curabitur imperdiet lacus et diam tempor elementum.</li>
+                    <li><strong>Umiejętność</strong> - Ut feugiat lacinia sapien a ultricies. Pellentesque felis ipsum, vehicula vel semper at, venenatis rhoncus quam.</li>
+                    <li><strong>Umiejętność</strong> - Donec porttitor orci accumsan, dictum ex efficitur, congue est. </li>
+                </ul>
+            </div>
+            <h2 style="padding-top: 40px;">Umiejętności miękkie</h2>
+            <hr>
+            <div class="skills">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+
+            <h2 style="padding-top: 40px;">Hobby</h2>
+            <hr>
+            <p style="font-size: 12px;">
+                <b>></b> Vestibulum id urna vel diam rhoncus gravida quis ac risus. Phasellus et dictum elit. Sed ac porttitor neque. Phasellus eleifend, mauris a vestibulum congue, urna lacus pellentesque arcu, vitae mattis mauris lacus eget lectus</i>
+            </p>
+            <p style="font-size: 12px;">    
+                <b>></b> Vivamus vel erat eu erat lobortis ornare. Ut turpis tellus, pretium eget aliquet ut, dapibus et risus. Ut feugiat sapien tellus, vitae dictum dolor tempus non. Nam sit amet euismod odio.
+            </p>    
+            <p style="font-size: 12px;">
+                <b>></b> Curabitur pharetra tempor odio nec maximus. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin dolor lectus, interdum eu magna non, sodales gravida lacus.
+            </p>   
+            <p style="font-size: 12px;">    
+                <b>></b> Suspendisse pretium ex dolor, sit amet ornare urna lobortis sed. Proin porttitor, felis eu semper ornare, urna elit ornare velit, nec pharetra diam eros quis tellus. Proin eu fringilla ipsum. Suspendisse congue nibh nibh.
+            </p>
+
+            <div class="rodo" style="margin-top: 100px;">
+                <p style="font-size: 12px; color: gray;">
+                    Nulla facilisi. Phasellus aliquet ligula nunc, ut luctus est porta eu. Vestibulum eu cursus ligula. Pellentesque vitae euismod enim, in feugiat felis. Suspendisse dolor neque, tincidunt convallis accumsan sit amet, pellentesque sit amet neque. Suspendisse potenti. Etiam nec elit lacinia, vulputate justo eu, fermentum magna. Mauris non consectetur nisi.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
